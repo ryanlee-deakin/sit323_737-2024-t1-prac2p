@@ -4,7 +4,7 @@ let port = 3000,
     server = require('http').createServer(app);
 
 app.get('/', function (req, res) {
-  console.log(`[server] ${req.method} ${req.originalUrl}`);
+  console.log(`[server] ${req.ip} ${req.method} ${req.originalUrl}`);
   res.send('Hello World -- from Lee [ryanlee@deakin.edu.au]');
 })
 
